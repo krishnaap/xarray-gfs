@@ -5,84 +5,44 @@ xarray uses cfgrib to read the grib or grib2 files. cfgrib have to explicitly gi
 The type of levels are: 
 hybrid,atmosphere,surface,unknown,isobaricInPa,isobaricInhPa,meanSea,depthBelowLandLayer,heightAboveGround,heightAboveGroundLayer,tropopause,maxWind,heightAboveSea,isothermZero,pressureFromGroundLayer,sigmaLayer,sigma,potentialVorticity.
 
-In detail, the each variables are given in different type of levls in GFS. Most frequently used variables are given down below with thier corresponding type of levels. So when you want to read a specific variable from GFS, you have to specify the suitable type of level.
+In detail, the each variables are given in different type of levls in GFS. Most frequently used variables are given down below with their corresponding type of levels. So when you want to read a specific variable from GFS, you have to specify the suitable type of level.
 
 hybrid
 Data variables:
-    clwmr       (latitude, longitude)    
-    icmr        (latitude, longitude)
-    rwmr        (latitude, longitude)
-    snmr        (latitude, longitude)
-    grle        (latitude, longitude)
+    clwmr, icmr,rwmr, snmr, grle      
 
 
 Atmosphere
 
 Data variables:
-    refc        (latitude, longitude)
+    refc        
 
 
 Surface
 
 Data variables:
-    vis         (latitude, longitude)
-    gust        (latitude, longitude)
-    hindex      (latitude, longitude)
-    sp          (latitude, longitude)
-    orog        (latitude, longitude)
-    t           (latitude, longitude)
-    sdwe        (latitude, longitude)
-    sde         (latitude, longitude)
-    cpofp       (latitude, longitude)
-    prate       (latitude, longitude)
-    csnow       (latitude, longitude)
-    cicep       (latitude, longitude)
-    cfrzr       (latitude, longitude)
-    crain       (latitude, longitude)
-    wilt        (latitude, longitude)
-    fldcp       (latitude, longitude)
-    SUNSD       (latitude, longitude)
-    lftx        (latitude, longitude)
-    cape        (latitude, longitude)
-    cin         (latitude, longitude)
-    4lftx       (latitude, longitude)
-    hpbl        (latitude, longitude)
-    lsm         (latitude, longitude)
-    siconc      (latitude, longitude)
-    
+    vis,gust,hindex,sp,orog,t,sdwe,sde,cpofp,prate,csnow,cicep,cfrzr,crain,wilt,fldcp,SUNSD,lftx,cape,cin,4lftx,hpbl,lsm,siconc
 
 unknown
 
 Data variables:
-    u           (latitude, longitude)
-    v           (latitude, longitude)
-    VRATE       (latitude, longitude)
-    pwat        (latitude, longitude)
-    cwat        (latitude, longitude)
-    r           (latitude, longitude)
-    tozne       (latitude, longitude)
-    gh          (latitude, longitude)
+    u,v,VRATE,pwat,cwat,r,tozne ,gh
 
 
 isobaricInPa
 
 Data variables:
-    gh            (latitude, longitude)
-    t             (latitude, longitude)
-    absv          (latitude, longitude)
-    o3mr          (latitude, longitude)
+    gh,t ,absv,o3mr
 
 
 isobaricInhPa
 
 Data variables:
-    gh             (isobaricInhPa, latitude, longitude)
-    t              (isobaricInhPa, latitude, longitude)
+    gh,t              (isobaricInhPa, latitude, longitude)
 	
 
 meanSea
 
 Data variables:
-    mslet       (latitude, longitude)
-    prmsl       (latitude, longitude)
+    mslet,prmsl
     
