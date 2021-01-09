@@ -1,4 +1,4 @@
-# gfs-xarray
+# xarray-gfs
 Script for reading gfs file or any grib file using xarray and cfgrib
 
 xarray uses cfgrib to read the grib or grib2 files. cfgrib have to explicitly give in what type of level you are reading the data, especially in the case of NCEP GFS data. GFS contains data in variety of types of levels.
